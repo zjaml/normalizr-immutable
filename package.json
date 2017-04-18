@@ -29,8 +29,8 @@
     "test": "mocha --compilers js:babel-register --harmony-proxies --opts test/mocha.opts test/**/*.spec.js",
     "prebuild": "rimraf dist lib",
     "build": "webpack && babel src --out-dir lib",
-    "postinstall": "npm run build",
-    "prepublish": "npm install && npm run build"
+    "postinstall": "npm install && npm run build",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "harmony-proxy": "^1.0.1",
