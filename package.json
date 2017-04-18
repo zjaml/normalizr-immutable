@@ -1,6 +1,6 @@
 {
-  "name": "normalizr-immutable",
-  "version": "0.0.4-beta12",
+  "name": "my-normalizr-immutable",
+  "version": "0.1.1",
   "description": "Normalizes JSON to immutable Records according to schema for Redux applications and provide proxied access to properties",
   "main": "lib/index.js",
   "private": false,
@@ -29,7 +29,6 @@
     "test": "mocha --compilers js:babel-register --harmony-proxies --opts test/mocha.opts test/**/*.spec.js",
     "prebuild": "rimraf dist lib",
     "build": "webpack && babel src --out-dir lib",
-    "postinstall": "npm run build",
     "prepublish": "npm run build"
   },
   "dependencies": {
