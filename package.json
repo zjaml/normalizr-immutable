@@ -30,7 +30,7 @@
     "prebuild": "rimraf dist lib",
     "build": "webpack && babel src --out-dir lib",
     "postinstall": "npm run build",
-    "prepublish": "npm run build"
+    "prepublish": "npm install && npm run build"
   },
   "dependencies": {
     "harmony-proxy": "^1.0.1",
